@@ -1,6 +1,6 @@
 # pybot: python slack bot template
 
-* use [slackbot](https://github.com/lins05/slackbot) library
+* use [slackbot](https://github.com/lins05/slackbot) & [python-slackclient](https://github.com/slackapi/python-slackclient) library
 
 ## How to set up
 
@@ -20,5 +20,8 @@
     4. Build docker file
         - `docker-compose build`
     5. Start application by docker
-        - `docker-compose up -d`
-    6. Try to run some commands
+        - `docker-compose run --rm app bash`
+    6. Run some scripts
+        - `pipenv run python run.py`
+        - `pipenv run python scripts/notification.py`
+
