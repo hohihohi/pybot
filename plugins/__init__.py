@@ -1,13 +1,15 @@
 import os
+from slackbot.bot import default_reply
 
-import notification
-from helper import log_message
+from .hello import hello  # NOQA
+from .helper import log_message  # NOQA
 
 
-DEFAULT_REPLY = f"Default message: {message.body['text']} accepted"
+DEFAULT_REPLY = f"Sorry, I didn't understand your operation"
+
 
 @default_reply
 @log_message
 def deafult_reply_handler(message):
-    reply = os.environ["DEFAULT_REPLY"] or DEFAULT_REPLY
+    reply = os.environ.get("DEFAULT_REPLY", DEFAULT_REPLY)
     message.reply(reply)
