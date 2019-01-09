@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 slackbot = "*"
 python-dotenv = "*"
+slackclient = "*"
 
 [dev-packages]
 "autopep8" = "*"
