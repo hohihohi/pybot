@@ -16,7 +16,7 @@
     1. Please `git colne` this repository
     2. Move project root path
     3. Create env file
-        - `export API_TOKEN=*** > .env`
+        - `echo API_TOKEN=*** > .env`
     4. Build docker file
         - `docker-compose build`
     5. Start application by docker
